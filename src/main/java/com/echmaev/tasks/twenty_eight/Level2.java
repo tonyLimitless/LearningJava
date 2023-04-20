@@ -1,14 +1,14 @@
 package com.echmaev.tasks.twenty_eight;
 
-public class Level2 {
+public class Level1 {
     public static int odometer(int[] oksana) {
-        if (oksana.length % 2 != 0 || oksana.length < 2) {
-            try {
-                throw new Exception();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        } else {
+//        if (oksana.length % 2 != 0 || oksana.length < 2) {
+//            try {
+//                throw new Exception();
+//            } catch (Exception e) {
+//                throw new RuntimeException(e);
+//            }
+//        } else {
             int countOfActivities = oksana.length / 2;
             int km;
             if(countOfActivities == 1) {
@@ -24,6 +24,6 @@ public class Level2 {
                 System.out.println(km);
             }
             return km;
-        }
+//        }
     }
 }
