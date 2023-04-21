@@ -2,7 +2,7 @@ package com.echmaev.tasks.twenty_eight;
 
 import java.util.Arrays;
 
-public class Level1 {
+public class Level4 {
     public static int [] MadMax(int n, int [] tele) {
         if (tele.length == 1) {
             return tele;
