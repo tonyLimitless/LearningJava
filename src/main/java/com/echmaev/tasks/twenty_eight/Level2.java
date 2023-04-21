@@ -1,6 +1,6 @@
 package com.echmaev.tasks.twenty_eight;
 
-public class Level1 {
+public class Level2 {
     public static int odometer(int[] oksana) {
 //        if (oksana.length % 2 != 0 || oksana.length < 2) {
 //            try {

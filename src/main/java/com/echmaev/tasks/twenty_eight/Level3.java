@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Level1 {
+public class Level3 {
     public static int ConquestCampaign(int x, int y, int l, int [] battalion) {
         Set<Point> pointSet = buildHashSet(battalion);
         int allBoxes = x * y;
