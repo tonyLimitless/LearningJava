@@ -13,7 +13,6 @@ public class Level3 {
         paintedCellsBeforeToday.addAll(pointSet);
         List<Point> paintedCellsToday = new ArrayList<>();
         int whatDayToday = 1;
-        int baseCounter = 0;
         while (allBoxes != paintedCellsBeforeToday.size()) {
             for (int counter = 0; counter < paintedCellsBeforeToday.size(); counter++) {
 
@@ -78,37 +77,37 @@ public class Level3 {
         }
         return pointSet;
     }
-}
-class Point {
-    int x;
-    int y;
+    static class Point {
+        int x;
+        int y;
 
-    public int getX() {
-        return x;
-    }
-    public int getY() {
-        return y;
-    }
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
+        public int getX() {
+            return x;
+        }
+        public int getY() {
+            return y;
+        }
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
 
-        Point point = (Point) o;
+            Point point = (Point) o;
 
-        if (x != point.x) return false;
-        return y == point.y;
-    }
+            if (x != point.x) return false;
+            return y == point.y;
+        }
 
-    @Override
-    public int hashCode() {
-        int result = x;
-        result = 31 * result + y;
-        return result;
+        @Override
+        public int hashCode() {
+            int result = x;
+            result = 31 * result + y;
+            return result;
+        }
     }
 }
