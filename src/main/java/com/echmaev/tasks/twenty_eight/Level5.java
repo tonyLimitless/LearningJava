@@ -3,7 +3,7 @@ package com.echmaev.tasks.twenty_eight;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Level1 {
+public class Level5 {
     public static int [] SynchronizingTables(int n, int [] ids, int [] salary) {
 
         int[] arrayIds = new int[n];
