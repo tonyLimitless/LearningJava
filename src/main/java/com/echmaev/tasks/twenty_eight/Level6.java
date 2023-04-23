@@ -168,7 +168,15 @@ public class Level1 {
         if(String.valueOf(sum).matches("^-?[0-9]*\\.?[0]{1}$"))  {
             return String.valueOf((int)(sum * 100000)).replaceAll("0", "");
         }
-        String.valueOf(sum);
-        return String.valueOf((int)(sum * 100000) + 1).replaceAll("0", "");
+
+        String str = String.valueOf(sum);
+
+        char ch = str.charAt(str.indexOf('.') + 6);
+        if (ch > '4') {
+            return String.valueOf((int) (sum * 100000) + 1).replaceAll("0", "");
+        } else {
+            return String.valueOf((int) (sum * 100000)).replaceAll("0", "");
+
+        }
     }
 }
