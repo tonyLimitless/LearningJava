@@ -1,6 +1,6 @@
 package com.echmaev.tasks.twenty_eight;
 
-public class Level1 {
+public class Level6 {
 
     public static String PatternUnlock(int n, int [] hits) {
         int index = 0;
