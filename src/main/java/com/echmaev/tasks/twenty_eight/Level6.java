@@ -164,7 +164,6 @@ public class Level1 {
 
             index++;
         }
-        String.valueOf((int)(sum * 100000) + 1).replaceAll("0", "");
         return String.valueOf((int)(sum * 100000) + 1).replaceAll("0", "");
     }
 }
