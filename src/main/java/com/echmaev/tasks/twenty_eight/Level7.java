@@ -3,7 +3,7 @@ package com.echmaev.tasks.twenty_eight;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Level1 {
+public class Level7 {
     public static int[] WordSearch(int len, String s, String subs) {
         // Шаг 1: разбиваем строку на набор строк через выравнивание по заданной ширине
         List<String> lines = new ArrayList<>();
