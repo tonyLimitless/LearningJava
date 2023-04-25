@@ -7,20 +7,21 @@ public class Level1 {
     public static int[] WordSearch(int len, String s, String subs) {
         // Шаг 1: разбиваем строку на набор строк через выравнивание по заданной ширине
         List<String> lines = new ArrayList<>();
-        String[] words = s.split(" ");
-        String line = "";
-        for (int i = 0; i < words.length; i++) {
-            if (line.isEmpty()) {
-                line = words[i];
-            } else if (line.length() + words[i].length() + 1 <= len) {
-                line += " " + words[i];
-            } else {
-                lines.add(line);
-                line = words[i];
+        int index = 0;
+        while (index < s.length()) {
+            int endIndex = Math.min(index + len, s.length());
+            if (endIndex == s.length()) {
+                lines.add(s.substring(index));
+                break;
             }
-        }
-        if (!line.isEmpty()) {
-            lines.add(line);
+            int lastSpaceIndex = s.lastIndexOf(" ", endIndex);
+            if (lastSpaceIndex > index) {
+                lines.add(s.substring(index, lastSpaceIndex));
+                index = lastSpaceIndex + 1;
+            } else {
+                lines.add(s.substring(index, endIndex));
+                index = endIndex;
+            }
         }
 
         // Шаг 2: проверяем каждую строку на наличие заданного слова
