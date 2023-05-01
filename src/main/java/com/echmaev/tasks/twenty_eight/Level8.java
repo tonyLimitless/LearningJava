@@ -1,6 +1,6 @@
 package com.echmaev.tasks.twenty_eight;
 
-public class Level1 {
+public class Level8 {
     public static int SumOfThe(int n, int[] nums) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
