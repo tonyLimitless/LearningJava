@@ -3,7 +3,7 @@ package com.echmaev.tasks.twenty_eight;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Level1 {
+public class Level10 {
     public static int PrintingCosts(String line) {
         char[] charArray = line.toCharArray();
         Map<String, Integer> tonerForSymbolMap = initMap();
