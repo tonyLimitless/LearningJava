@@ -1,6 +1,6 @@
 package com.echmaev.tasks.twenty_eight;
 
-public class Level1 {
+public class Level11 {
     public static String BigMinus(String s1, String s2) {
 
         // Проверка, что первое число больше или равно второму
