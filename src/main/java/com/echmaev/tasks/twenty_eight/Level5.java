@@ -13,6 +13,7 @@ public class Level5 {
         }
 
         Map<Integer, Integer> salaryForIdsMap = new HashMap<>(n);
+
         sortOfChoice(ids);
         sortOfChoice(salary);
 
@@ -25,6 +26,7 @@ public class Level5 {
         for (int index = 0; index < n; index++) {
             newArray[index] = salaryForIdsMap.get(arrayIds[index]);
         }
+
         return newArray;
 
     }

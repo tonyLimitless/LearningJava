@@ -1,6 +1,6 @@
 package com.echmaev.tasks.twenty_eight;
 
-public class Level1 {
+public class Level9 {
     public static String TheRabbitsFoot(String s, boolean encode) {
         String withoutGaps = s.replaceAll("\\s", "");
         char[] charString = withoutGaps.toCharArray();

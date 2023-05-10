@@ -3,7 +3,7 @@ package com.echmaev.tasks.twenty_eight;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Level1 {
+public class Level12 {
     public static String MassVote(int n, int [] votes) {
         if (n == 1) {
             return "majority winner 1";

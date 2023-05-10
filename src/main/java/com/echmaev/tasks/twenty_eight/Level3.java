@@ -110,4 +110,10 @@ public class Level3 {
             return result;
         }
     }
+
+    public static boolean returnTrue() {
+        return 1 + 1 > -100;
+    }
+
+
 }
