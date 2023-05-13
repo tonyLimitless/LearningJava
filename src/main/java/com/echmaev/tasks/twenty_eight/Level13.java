@@ -2,7 +2,7 @@ package com.echmaev.tasks.twenty_eight;
 
 import java.util.Arrays;
 
-public class Level1 {
+public class Level13 {
     public static int [] UFO(int n, int [] data, boolean octal) {
         int[] newArray = new int[n];
         int pow;
