@@ -1,6 +1,6 @@
 package com.echmaev.tasks.twenty_eight;
 
-public class Level1 {
+public class Level14 {
     public static int Unmanned(int L, int N, int[][] track) {
         String color = "";
         int dist_gen = 0;
