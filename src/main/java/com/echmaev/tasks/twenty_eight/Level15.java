@@ -1,6 +1,6 @@
 package com.echmaev.tasks.twenty_eight;
 
-public class Level1 {
+public class Level15 {
     public static boolean TankRush(int H1, int W1, String S1, int H2, int W2, String S2) {
         if (H2 > H1 || W2 > W1) {
             return false;
